@@ -54,7 +54,7 @@ table {
     --bg-header-color: #1F2937;
     --bg-quote-color: #e5e7eb;
     --txt-main-color:#f9faf8;
-    --txt-secondary-color: #e5e7eb;
+    --txt-secondary-color: #bdc0c4;
     --txt-info-color: #1F2937;
     --btn-bg-color: #3882f6;
 }
@@ -62,13 +62,14 @@ table {
 
 header{
 	background-color: var(--bg-header-color);
-	padding-inline: 4rem;
+	padding-inline: 16rem;
 }
 
 .navigation{
 	display: flex;
 	justify-content: space-between;
 	color: var(--txt-main-color);
+	padding: 2rem;
 }
 
 .navigation ul{
@@ -85,4 +86,50 @@ header{
 .navigation p{
 	font-size: 24px;
 	font-weight: bold;
+}
+
+.header-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem;
+	
+}
+
+.header-container img{
+	width: 50%;
+	height: 400px;
+	border-radius: 3px;
+	
+}
+
+.content-container{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: left;
+	width: 40%;
+}
+
+.content-container h1{
+	color: var(--txt-main-color);
+	font-size: 48px;
+	font-weight: 900;
+}
+
+.content-container p{
+	color: var(--txt-secondary-color);
+	font-size: 18px;
+}
+
+.btn{
+	all: unset;
+	color: var(--txt-main-color);
+	font-weight: bold;
+	background-color: var(--btn-bg-color);
+	height: 30px;
+	width: 110px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
 }
